@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Drowsers Valentine's Day</title>
+    
+</head>
+<style>
+    *{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+body
+{
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+
+}
+.bod
+{
+    /* display: inline-flex;
+    margin-top:7rem;
+    margin-left: 8rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.card
+{
+    position: relative;
+    width: 600px;
+    height: 350px;
+   
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;     
+}
+.card .box
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.card .box::before
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:red;
+    clip-path: circle(50px at center);
+    transition: 1.5;
+}
+.card .box:hover:before
+{
+    clip-path: circle(400px at center);
+    background:royalblue;
+}
+.card img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 1s;
+}
+.card:hover img{
+    left:72%;
+    height: 400px;
+}
+
+.card .content
+{
+    position: relative;
+    width:40%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.card:hover .content
+{
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.nxt
+{
+    background-image: linear-gradient(to right, #141E30 0%, #243B55  51%, #141E30  100%);
+    /* position: fixed;
+    text-decoration: none;
+    font-style: none;
+    right:10%;
+    font-size: 20px;
+    padding: 10px;
+    
+    border-radius: 10px; */
+    margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 10px #eee;
+            border-radius: 10px;
+            display: block;
+}
+.nxt:hover{
+    background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+}
+a{
+    text-decoration:none;
+    color: white;
+}
+.prev
+{    background-image: linear-gradient(to right, #141E30 0%, #243B55  51%, #141E30  100%);
+
+    position: fixed;
+    left:8%;
+    padding: 1rem 2rem;
+    background-color: yellowgreen;
+    border-radius: 25%;
+    
+    padding: 15px 16px;
+                text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 10px #eee;
+            border-radius: 10px;
+            display: block;
+
+}
+.prev:hover{
+    background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #141E30 0%, #243B55  51%, #141E30  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+         
+a{
+    text-decoration:none;
+   color: white;
+}
+.link{
+      margin-top: 10px;
+      padding : 3px;
+      border-radius: 50%;
+      background-color:white
+      
+  }
+  .link:hover{
+      background-color:rgb(161, 152, 152); 
+      transition: 0.3s;
+  }
+
+</style>
+<body>
+    <div class="bod">
+        <nav>
+            <div class="logo">
+                <h4 class="heading">Casanova</h4>
+                
+            </div>
+            <div class="navbar">
+                
+                <ul>
+                    <li class="navcontent"> <a href="index.html" class="ray">Home</a> </li>
+                    <li class="navcontent"> <a href="index.html" class="ray">Explore</a> </li>
+                    <li class="navcontent"  > <a href="index.html" class="ray">Blogs</a> </li>
+                    <li class="navcontent"> <a href="index.html" class="ray">Contact</a> </li>
+                </ul>
+         
+            </div>
+        </nav>
+    <div class="card">
+        <div class="box">
+
+        </div>
+        <div class="content">
+            <h2>Rayansh Srivastava</h2>
+            <p> I am the founder of the team drowsers and the current team lead of the project Casanova. I have high expertise in web development and python as well.
+                 </p>
+                 <a href="https://github.com/Rayansh0071505">
+                    <button style="font-size:24px" class="link" >   <i class="fab fa-github"></i></button></a>
+                    <a href="https://www.linkedin.com/in/rayansh-srivastava-419951219/">
+                   <button style="font-size:24px;color: rgb(84, 84, 238);" class="link"> <i class="fab fa-linkedin"></i></i></button></a>
+        </div>
+       
+        <img src="portfolio.jpeg">
+    </div>
+    <div class="nxt">
+        <a href="nisheeth1.html"> Next Mate</a> 
+      </div>
+      <div class="prev">
+        <a href="ayaan.html">Previous Mate</a>
+    </div>
+</div>
+
+
+</body>
+</html>
+<!-- [19:18, 12/02/2022] Rayansh: https://github.com/Rayansh0071505
+[19:19, 12/02/2022] +91 91451 98394: https://www.linkedin.com/feed/
+[19:19, 12/02/2022] +91 91451 98394: https://github.com/AyaanArshad
+[19:19, 12/02/2022] Rayansh: https://www.linkedin.com/in/rayansh-srivastava-419951219/ -->

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Drowsers Valentine's Day</title>
+    
+</head>
+<style>
+    *{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+body
+{
+    
+    background-color: #e64176;
+background-image: linear-gradient(225deg, #e64176 0%, #4c7c9e 50%, #2B86C5 100%);
+
+height: 100vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+.bod
+{
+    /* display: inline-flex;
+    margin-top:7rem;
+    margin-left: 8rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.card
+{
+    position: relative;
+    width: 600px;
+    height: 350px;
+   
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;     
+}
+.card .box
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.card .box::before
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:red;
+    clip-path: circle(50px at center);
+    transition: 1.5;
+}
+.card .box:hover:before
+{
+    clip-path: circle(400px at center);
+    background-color: #4ba5d1;
+background-image: linear-gradient(90deg, #4ba5d1 8%, #56cfb3 78%, #000000 100%);
+
+
+
+
+
+
+
+}
+.card img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 1s;
+    
+    border-radius: 25%;
+}
+.card:hover img{
+    left:80%;
+    height: 500px;
+    border-radius: 35%;
+
+
+}
+
+.card .content
+{
+    position: relative;
+    width:40%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+    color: whitesmoke;
+    
+}
+.card:hover .content
+{
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.nxt
+{
+    background-image: linear-gradient(to right, #141E30 0%, #243B55  51%, #141E30  100%);
+    /* position: fixed;
+    text-decoration: none;
+    font-style: none;
+    right:10%;
+    font-size: 20px;
+    padding: 10px;
+    
+    border-radius: 10px; */
+    margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 10px #eee;
+            border-radius: 10px;
+            display: block;
+}
+.nxt:hover{
+    background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+}
+a{
+    text-decoration:none;
+    color: white;
+}
+.prev
+{    background-image: linear-gradient(to right, #141E30 0%, #243B55  51%, #141E30  100%);
+
+    position: fixed;
+    left:8%;
+    padding: 1rem 2rem;
+    background-color: yellowgreen;
+    border-radius: 25%;
+    
+    padding: 15px 16px;
+                text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 10px #eee;
+            border-radius: 10px;
+            display: block;
+
+}
+.prev:hover{
+    background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+}
+.link{
+      margin-top: 10px;
+      padding : 3px;
+      border-radius: 50%;
+      background-color:white
+      
+  }
+  .link:hover{
+      background-color:rgb(161, 152, 152); 
+      transition: 0.3s;
+  }
+
+</style>
+<body>
+    <div class="bod">
+        <nav>
+            <div class="logo">
+                <h4 class="heading">Casanova</h4>
+            </div>
+            <div class="navbar">
+                
+                <ul>
+                    <li class="navcontent"> <a href="index.html" class="ray">Home</a> </li>
+                    <li class="navcontent"> <a href="#explore" class="ray">Explore</a> </li>
+                    <li class="navcontent"  > <a href="#blog" class="ray">Blogs</a> </li>
+                    <li class="navcontent"> <a href="rayansh.html" class="ray">Contact</a> </li>
+                </ul>
+         
+            </div>
+        </nav>
+    <div class="card">
+        <div class="box">
+
+        </div>
+        <div class="content">
+            <h2>Ayaan Arshad</h2>
+            <p> Cofounder of Team Drowsers. He has great skills in python, opencV and web development
+                 </p>
+                 <a href="https://github.com/AyaanArshad">
+                    <button style="font-size:24px" class="link" >   <i class="fab fa-github"></i></button></a>
+                    <a href="https://www.linkedin.com/in/ayaan-arshad-b594bb1b9/">
+                   <button style="font-size:24px ;color:rgb(84, 84, 238);" class="link"> <i class="fab fa-linkedin"></i></i></button></a>
+        </div>
+       
+        <img src="aayan.jpeg">
+    </div>
+
+    <div class="nxt">
+        <a href="rayansh.html"> Next Mate</a> 
+      </div>
+      <div class="prev">
+          <a href="nisheeth1.html">Previous Mate</a>
+      </div>
+</div>
+
+
+</body>
+</html>

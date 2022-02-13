@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+#first{
+   /* background-image:url('moon-evening-sky-mountains-forest-silhouette-3840x2160-402.jpg'); */
+   background-color: #D9AFD9;
+background-image: linear-gradient(180deg, #D9AFD9 0%, #97D9E1 51%);
+
+    /* background-color: #FF9A8B;
+background-image: linear-gradient(0deg, #FF9A8B 11%, #FF6A88 70%, #d64160 96%); */
+
+height: 79vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.yes{
+ height: 100vh;
+}
+.mountain img
+        {
+            
+           margin-top: 100vh;   
+           width: 100% ; 
+           animation-name: mnt;
+           animation-iteration-count: 1;
+           animation-fill-mode: forwards;
+           animation-duration: 1s;
+           animation-timing-function: ease-in-out;
+        }
+       
+        @keyframes mnt
+        {
+            from
+            {
+                margin-top: 100vh;
+            }
+            to
+            {
+                margin-top: 43.55vh;
+            }
+        }
+        
+        .as
+        {
+            
+            display: flex;
+            position: absolute;
+            margin-top: 15px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            top:48%;
+            font-size: 9rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            animation-name: val;
+            animation-duration: 2s;
+            animation-delay: 0s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+            width: 0%;
+            color: rgb(0, 0, 0);
+
+        }
+        
+        @keyframes val
+        {
+            from{
+                width:0;
+            }
+            to
+            {
+                width: 100% ;
+            }
+        }
+.zoomOutText p
+  {
+      display: flex;
+      height: 100vh;
+      
+      justify-content: center;
+      /* text-align: center; */
+      align-items: center;
+      animation: anime;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in-out;
+      font-size: 50rem;
+      color: rgb(245, 243, 228);
+      animation-fill-mode: forwards;
+  }
+  @keyframes anime{
+    form {
+      font-size: 50rem;
+      opacity: 0;
+     
+      
+    }
+    to
+    {
+        opacity: 1;
+        font-size: 9rem;
+        
+      
+       }
+    }
+nav{
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    
+    background-color: rgba(0, 0, 0, .05);
+    border-width: 0;
+    /* background: linear-gradient(135deg, black 30%, rgb(165, 184, 190) 100%); */
+   
+}
+​
+.front{
+    display: flex;
+}
+
+.heading{
+    font-size: 20px;
+}
+
+.heading:hover{
+  font-size: 22px;
+  transition: 0.3s;
+}
+.logo{
+    position: relative;
+    padding: 29px 103px 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color:white;
+    bottom: 9px;
+    
+}
+.navbar ul{
+    position: relative;
+    padding: 15px 5px 15px 5px;
+    cursor: pointer;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    gap:53px;
+}
+.navbar ul li a{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    color:linear-gradient(whitesmoke,white);
+    font-weight: 500;
+    
+}
+li:hover{
+    background-color: rgba(197, 224, 222, 0.39);
+    padding:2px;
+    border-radius:8px;
+    transition: 0.2s;
+}
+
+.page{
+    height: 100vh;
+    
+}
+
+#alert-head{
+    font-family: 'Poppins', sans-serif;
+}
+ @media screen and (max-width:570px){
+   #first{
+       width:100vw;
+   }
+   .logo{
+       right:12vh;
+       bottom: 2vh;
+       text-align: center;
+       margin:10px;
+       /* padding: 3px; */
+   }
+  nav{
+      position: fixed;
+      bottom: 2px;
+  }
+   .navbar ul{
+
+       position: fixed;
+    top:0.5vh;
+    right:6vh;
+       gap:30px;
+   }
+   @keyframes anime{
+    form {
+      font-size: 10rem;
+      
+    }
+    to
+    {
+        font-size: 5rem;
+      
+       }
+    }
+    .zoomOutText p{
+        height:58vh;
+        font-size:10rem;
+    }
+ }
+
+ 
+  
+  @keyframes wavy {
+    0% { background-position-x: 0 }
+    100% { background-position-x: 118px; }
+  }
+ 
+  .wiskey
+{
+  display: flex;
+}
+.wiskey>a {
+  text-decoration: none;
+  padding: 15px 30px;
+  color: #00aeff;
+  font-size: 18px;
+  letter-spacing: 3px;
+  border: 2px solid #00aeff;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.wiskey>a:hover {
+  color: white;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: calc(100% + 22px);
+  background-color: #00aeff;
+  transition: all 1s;
+  z-index: -1;
+}
+
+.wiska:hover .wave {
+  top: 0;
+}
+
+.wave:before {
+  content: "";
+  position: absolute;
+  top: -22px;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background: url(wave.png);
+  animation: wavy 0.5s linear infinite;
+}
+
+@keyframes wavy {
+  0% { background-position-x: 0 }
+  100% { background-position-x: 118px; }
+}
+
+#shop{
+    height: 100vh;
+}
+
+/* shop */
